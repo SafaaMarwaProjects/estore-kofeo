@@ -115,8 +115,29 @@ Le frontend sera normalement accessible à l'adresse :
 ```bash 
 http://localhost:3000
 ```
+### 3. Configuration de la base de données
 
-### 3. Installation du Backend
+Kofeo utilise une base de données MySQL pour stocker les informations sur les produits, les catégories, le stock, les comptes utilisateurs, les paniers, les commandes, les profils et les avis.
+
+#### ▣ Prérequis
+- MySQL 8.0 ou version ultérieure
+- phpMyAdmin (facultatif, pour faciliter la gestion de la base de données)
+
+#### ▣ Importation de la base de données
+
+1. Démarrez MySQL à l'aide de votre environnement local (par exemple, WampServer).
+2. Ouvrez phpMyAdmin à l'adresse `http://localhost/phpmyadmin`.
+3. Créez une base de données nommée `estore`.
+4. Sélectionnez la base de données `estore`, puis ouvrez l'onglet **Importer**.
+5. Importez le fichier SQL situé dans `database/estore_kofeo.sql`.
+
+#### ▣ Configuration de la connexion à la base de données
+
+Configurez la connexion à MySQL dans le backend Spring Boot en utilisant vos identifiants locaux. Assurez-vous que le nom de la base de données, le nom d'utilisateur, le mot de passe et le port correspondent à votre configuration MySQL.
+
+Le fichier SQL contient la structure de la base de données ainsi que des données d'exemple destinées à la démonstration du projet.
+
+### 4. Installation du Backend
 Ouvrez le projet estore_backend avec IntelliJ IDEA ou un autre IDE compatible avec Java.
 
 Assurez-vous que :
