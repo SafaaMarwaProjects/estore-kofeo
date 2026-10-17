@@ -139,28 +139,7 @@ The frontend should normally be available at:
 http://localhost:3000
 ```
 
-### 3. Backend Installation
-
-Open the `estore_backend` project with **IntelliJ IDEA** or another Java-compatible IDE.
-
-Make sure that:
-
-* Java JDK is installed.
-* Maven is available.
-* MySQL is installed and running.
-* The database configuration is correctly defined.
-
-Configure the MySQL database according to the Spring Boot project configuration.
-
-Then, start the Spring Boot application.
-
-The backend should normally be available at:
-
-```text
-http://localhost:8080
-```
-
-### 4. Database Setup
+### 3. Database Setup
 
 Kofeo uses a MySQL database to store product information, categories, inventory, user accounts, shopping carts, orders, profiles, and reviews.
 
@@ -181,3 +160,25 @@ Kofeo uses a MySQL database to store product information, categories, inventory,
 Configure your database connection in the Spring Boot backend using your local MySQL credentials. Keep your credentials in a local configuration file or environment variables and do not commit private credentials to GitHub.
 
 The SQL dump includes the database schema and sample data for demonstration purposes.
+
+
+### 4. Backend Installation
+
+Open the `estore_backend` project with **IntelliJ IDEA** or another Java-compatible IDE.
+
+Make sure that:
+
+* Java JDK is installed.
+* Maven is available.
+* MySQL is installed and running.
+* The database configuration is correctly defined.
+
+Configure the MySQL database according to the Spring Boot project configuration.
+
+Then, start the Spring Boot application.
+
+The backend should normally be available at:
+
+```text
+http://localhost:8080
+```
