@@ -159,3 +159,25 @@ The backend should normally be available at:
 ```text
 http://localhost:8080
 ```
+
+### 4. Database Setup
+
+Kofeo uses a MySQL database to store product information, categories, inventory, user accounts, shopping carts, orders, profiles, and reviews.
+
+#### ▣ Requirements
+- MySQL 8.0 or later
+- phpMyAdmin (optional, for easier database management)
+
+#### ▣ Installation
+
+1. Start MySQL using your local environment (e.g., WampServer).
+2. Open phpMyAdmin at `http://localhost/phpmyadmin`.
+3. Create a database named `estore`.
+4. Select the `estore` database and open the **Import** tab.
+5. Import the SQL file located at `database/estore_kofeo.sql`.
+
+#### ▣ Database Configuration
+
+Configure your database connection in the Spring Boot backend using your local MySQL credentials. Keep your credentials in a local configuration file or environment variables and do not commit private credentials to GitHub.
+
+The SQL dump includes the database schema and sample data for demonstration purposes.
